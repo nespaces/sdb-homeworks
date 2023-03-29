@@ -17,10 +17,13 @@
 ## Задание 2. Memcached
 Установите и запустите memcached.
 ### Ответ
-
+ ![1](https://github.com/nespaces/sdb-homeworks/blob/main/img/1.png)
 ## Задание 3. Удаление по TTL в Memcached
 Запишите в memcached несколько ключей с любыми именами и значениями, для которых выставлен TTL 5.
 ### Ответ
+ ![2](https://github.com/nespaces/sdb-homeworks/blob/main/img/2.png)
 ## Задание 4. Запись данных в Redis
 Запишите в Redis несколько ключей с любыми именами и значениями.
+
 ### Ответ
+ ![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/3.png)
