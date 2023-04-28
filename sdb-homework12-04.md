@@ -38,11 +38,17 @@ WHERE length > (
 ### Ответ
 ```
 SELECT 
-    DATE_TRUNC('month', rental.rental_date) AS month, 
-    COUNT(DISTINCT rental.rental_id) AS rentals_count, 
+    DATE_TRUNC('month', rental.rental_date) AS month,
+    COUNT(DISTINCT rental.rental_id) AS rentals_count,
     SUM(payment.amount) AS total_payments
-FROM rental
-LEFT JOIN payment ON payment.rental_id = rental.rental_id
+FROM (
+    SELECT rental_id, rental_date
+    FROM rental
+    UNION
+    SELECT rental_id, rental_date
+    FROM rental
+) AS rental
+JOIN payment ON payment.rental_id = rental.rental_id
 GROUP BY month
 ORDER BY total_payments DESC
 LIMIT 1;
