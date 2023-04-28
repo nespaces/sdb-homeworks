@@ -26,11 +26,11 @@ HAVING COUNT(users.id) > 300;
 Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
 ### Ответ
 ```
-SELECT COUNT(*) as count_longer_than_average
-FROM films
-WHERE duration > (
-    SELECT AVG(duration)
-    FROM films
+SELECT COUNT(*) AS count_longer_than_average
+FROM film
+WHERE length > (
+    SELECT AVG(length)
+    FROM film
 );
 ```
 ## Задание 3. 
@@ -38,11 +38,11 @@ WHERE duration > (
 ### Ответ
 ```
 SELECT 
-    DATE_TRUNC('month', payments.payment_date) AS month, 
-    SUM(payments.amount) AS total_payments, 
-    COUNT(rentals.id) AS rentals_count
-FROM payments
-JOIN rentals ON payments.rental_id = rentals.id
+    DATE_TRUNC('month', rental.rental_date) AS month, 
+    COUNT(DISTINCT rental.rental_id) AS rentals_count, 
+    SUM(payment.amount) AS total_payments
+FROM rental
+LEFT JOIN payment ON payment.rental_id = rental.rental_id
 GROUP BY month
 ORDER BY total_payments DESC
 LIMIT 1;
