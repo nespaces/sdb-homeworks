@@ -18,6 +18,17 @@
 
 Приложите скриншоты конфигурации, выполнения работы: состояния и режимы работы серверов.
 ### Ответ
-```
 
-```
+## Статус MASTER
+![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/5.png)
+## Статус SLAVE
+![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/9.png)
+## Конфигурация MASTER
+![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/6.png)
+## Конфигурация SLAVE
+![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/7.png)
+## Создаём БД на MASTER
+![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/10.png)
+## Также видим её на SLAVE
+![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/11.png)
+
