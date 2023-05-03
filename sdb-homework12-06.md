@@ -31,4 +31,3 @@
 ![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/10.png)
 ## Также видим её на SLAVE
 ![sdb](https://github.com/nespaces/sdb-homeworks/blob/main/img/11.png)
-
