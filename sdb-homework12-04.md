@@ -8,48 +8,31 @@
 количество пользователей, закреплённых в этом магазине.
 ### Ответ
 ```
-SELECT employees.last_name, employees.first_name, stores.city, COUNT(users.id) as users_count
-FROM stores
-JOIN employees ON employees.store_id = stores.id
-JOIN users ON users.store_id = stores.id
-WHERE stores.id IN (
-    SELECT store_id
-    FROM users
-    GROUP BY store_id
-    HAVING COUNT(*) > 300
-)
-GROUP BY stores.id
-HAVING COUNT(users.id) > 300;
+SELECT s.first_name, s.last_name, a.city, COUNT(*) AS customer_count
+FROM store st
+JOIN staff s ON st.store_id = s.store_id
+JOIN customer c ON c.store_id = st.store_id
+JOIN address a ON st.address_id = a.address_id
+GROUP BY s.first_name, s.last_name, a.city
+HAVING COUNT(*) > 300;
 ```
  
 ## Задание 2. 
 Получите количество фильмов, продолжительность которых больше средней продолжительности всех фильмов.
 ### Ответ
 ```
-SELECT COUNT(*) AS count_longer_than_average
+SELECT COUNT(*) AS film_count
 FROM film
-WHERE length > (
-    SELECT AVG(length)
-    FROM film
-);
+WHERE length > (SELECT AVG(length) FROM film);
 ```
 ## Задание 3. 
 Получите информацию, за какой месяц была получена наибольшая сумма платежей, и добавьте информацию по количеству аренд за этот месяц.
 ### Ответ
 ```
-SELECT 
-    DATE_TRUNC('month', rental.rental_date) AS month,
-    COUNT(DISTINCT rental.rental_id) AS rentals_count,
-    SUM(payment.amount) AS total_payments
-FROM (
-    SELECT rental_id, rental_date
-    FROM rental
-    UNION
-    SELECT rental_id, rental_date
-    FROM rental
-) AS rental
-JOIN payment ON payment.rental_id = rental.rental_id
+SELECT DATE_FORMAT(p.payment_date, '%M %Y') AS month, COUNT(r.rental_id) AS rental_count
+FROM payment p
+JOIN rental r ON p.rental_id = r.rental_id
 GROUP BY month
-ORDER BY total_payments DESC
+ORDER BY SUM(p.amount) DESC
 LIMIT 1;
 ```
