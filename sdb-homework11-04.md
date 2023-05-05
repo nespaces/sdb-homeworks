@@ -14,7 +14,10 @@ $ pip install pika
 
 В качестве решения домашнего задания приложите оба скриншота, сделанных на этапе выполнения.
 ### Ответ
-
+Результат запуска producer.py
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/13.png)
+Результат запуска consumer.py
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/14.png)
 ## Задание 3. Подготовка HA кластера
 Используя Vagrant или VirtualBox, создайте вторую виртуальную машину и установите RabbitMQ. Добавьте в файл hosts название и IP-адрес каждой машины, чтобы машины могли видеть друг друга по имени.
 
