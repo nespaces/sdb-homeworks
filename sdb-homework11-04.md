@@ -40,12 +40,19 @@ $ rabbitmqctl cluster_status
 $ rabbitmqadmin get queue='hello'
 После чего попробуйте отключить одну из нод, желательно ту, к которой подключались из скрипта, затем поправьте параметры подключения в скрипте consumer.py на вторую ноду и запустите его.
 ## Ответ
-## Вывод команды с двух нод - $ rabbitmqctl cluster_status:
-## Первая нода
+Вывод команды с двух нод - $ rabbitmqctl cluster_status:
+
+Первая нода
+
 ![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/node1.png)
-### Вторая нода
+
+Вторая нода
+
 ![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/node2.png)
-### Объединение двух машин в кластер
+
+ Объединение двух машин в кластер
+
 ![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/politic.png)
-### Так как команда $ rabbitmqadmin неактуальна, используем curl 
+
+
 ![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/hello.png)
