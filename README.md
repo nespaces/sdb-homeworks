@@ -6,7 +6,7 @@
 
 2. [Кеширование Redis/memcached](https://github.com/nespaces/sdb-homeworks/blob/main/sdb-homework11-02.md).
 
-3. [ELK](https://github.com/netology-code/sdb-homeworks/blob/main/11-03.md).
+3. [ELK](https://github.com/nespaces/sdb-homeworks/blob/main/11-03.md).
 
 4. [Очереди RabbitMQ](https://github.com/nespaces/sdb-homeworks/blob/main/sdb-homework11-04.md).
 
