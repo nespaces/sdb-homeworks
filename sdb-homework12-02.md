@@ -61,4 +61,4 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 customer         | customer_id
 
 ### Ответ
-![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/9.png)
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/10.png)
