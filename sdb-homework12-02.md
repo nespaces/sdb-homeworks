@@ -22,10 +22,38 @@ ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'pass
 
 1.8. При работе в IDE сформируйте ER-диаграмму получившейся базы данных. При работе в командной строке используйте команду для получения всех таблиц базы данных. (скриншот)
 ### Ответ
-```
+1.1 Поднят сервер с MYSQL 8.0
 
-```
- 
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/1.png)
+
+1.2, 1.4 Создана учетная запись со всеми правами
+
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/2.png)
+
+1.3 Получение списка пользователей в базе данных
+
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/3.png)
+
+1.5 Получение списка прав на пользователя
+
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/4.png)
+
+1.6 Пользователь подключения sys_temp
+
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/5.png)
+
+1.7 Восстановление дампа в базу данных
+
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/6.png)
+
+1.8 ER диаграмма
+
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/7.png)
+
+Команда получения всех таблиц базы данных
+
+![3](https://github.com/nespaces/sdb-homeworks/blob/main/img/sql/8.png)
+
 ## Задание 2. 
 Составьте таблицу, используя любой текстовый редактор или Excel, в которой должно быть два столбца: в первом должны быть названия таблиц восстановленной базы, во втором названия первичных ключей этих таблиц. Пример: (скриншот/текст)
 
