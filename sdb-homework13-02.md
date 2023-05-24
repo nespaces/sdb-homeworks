@@ -7,7 +7,26 @@
 
 3. Зашифруйте домашний каталог пользователя с помощью eCryptfs.
 ### Ответ
-![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/12.png)
+Установленный eCryptfs
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/1.png)
+
+Информация о созданном пользователе cryptouser
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/2.png)
+
+Зашифровали домашний каталог пользователя
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/3.png)
+
+Исходный каталог
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/4.png)
+
+Зашифрованный каталог
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/5.png)
+
 ## Задание 2. 
 1. Установите поддержку LUKS.
 
