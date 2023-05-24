@@ -34,3 +34,15 @@
 
 3. Зашифруйте созданный раздел с помощью LUKS.
 ### Ответ
+Установленный LUKS
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/10.png)
+
+Создан небольшой раздел 100 Мб.
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/9.png)
+
+Зашифруйте созданный раздел с помощью LUKS.
+
+![s](https://github.com/nespaces/sdb-homeworks/blob/main/img/crypt/8.png)
+
